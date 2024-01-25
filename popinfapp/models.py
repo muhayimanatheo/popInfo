@@ -11,5 +11,5 @@ class Information(models.Model):
     provence = models.CharField(max_length=200)
     familymembers = models.IntegerField(default=None)
     resident = models.CharField(max_length=200)
-    bankaccount = models.IntegerField(default=None)
+    bankaccount = models.IntegerField(null=False)
     
